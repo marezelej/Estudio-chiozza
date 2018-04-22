@@ -1,0 +1,220 @@
+/*Estilos de la barra de navegación*/
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: rgb(211, 50, 128);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0;
+    box-sizing: content-box; /*Bootstrap nos pone border-box por defecto, dejando márgenes de costado */
+    margin:0;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;    
+    transition: color 0.7s ease-in-out;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    color: #F8EC22;
+}
+
+/*Dar estilo a los links del nav*/
+.navbar a{
+    color: white;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    font-family: fa5-proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #E9599F;
+    color: white;
+}
+
+/*Estilos de la presentación*/
+
+.fullscreen_intro{
+    background: #F8EC22;
+    height: 100%;
+}
+
+.fullscreen_intro img{
+    margin-bottom: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0;
+}
+
+/*Estilos del formulario de contacto*/
+
+form{
+    background-color:#f5f5f5;
+    max-width: 1000px;
+    min-width:700px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.contacto{
+    background-color: rgba(36, 36, 36, 0.3);
+    z-index:10;
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    visibility: visible;
+    opacity:1;
+    -webkit-transition: visibility 1s, opacity 1s; /* Safari */
+    transition: visibility 0.7s, opacity 0.7s ease-in-out;
+}
+
+.contacto h1{
+    font-weight: 600;
+    font-family: fa5-proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10;
+}
+.contacto button{
+    background-color:#E9599F;
+    font-weight: 600;
+    font-family: fa5-proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:white;
+}
+.contato button:hover{
+    background-color: #000000;
+}
+
+/*Feed de noticias*/
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.feed{
+    background-color: rgba(36, 36, 36, 0.3);
+    z-index:10;
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    visibility: visible;
+    opacity:1;
+    -webkit-transition: visibility 1s, opacity 1s; /* Safari */
+    transition: visibility 0.7s, opacity 0.7s ease-in-out;
+}
+
+.feed iframe{
+    min-height: 600px;
+    min-width: 400px;
+    width:70%;
+    height: 100%;
+    max-width:630px;
+    margin-top:0px;
+}
+
+/*Sección "sobre nosotros"*/
+.informacion{
+    background-color: rgba(36, 36, 36, 0.5);
+    z-index:10;
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    visibility: visible;
+    opacity:1;
+    -webkit-transition: visibility 1s, opacity 1s; /* Safari */
+    transition: visibility 0.7s, opacity 0.7s ease-in-out;
+    text-align: center;
+}
+
+.informacion img{
+    width:70%;
+    max-width: 780px;
+    margin-top:1rem;
+}
+
+/*Estilos del mapa*/
+.mapa{
+    position:fixed;
+    top:40;
+    left:-400;
+    z-index:0;
+    transition: left 0.7s ease-in-out;
+    border-radius: 50px;
+}
+.mapa:hover{
+    left:0;
+}
+.mapa iframe{
+    margin-top:10px;
+}
+.mapa img{
+    float:right;
+}
+
+/*Etiquetas derecha*/
+    .etiqueta img{
+        height: 100px;
+    }
+    /*Estilos de las redes*/
+        .whatsapp{
+            position:fixed;
+            top:150;
+            right: -370;
+            z-index:0;
+            transition: right 0.7s ease-in-out;
+        }
+
+    /*Estilo de los horarios*/
+        .horario{
+            position:fixed;
+            top:260;
+            right: -200;
+            z-index:0;
+            transition: right 0.7s ease-in-out;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+    /*Estilo de facebook*/
+        .facebook{
+            position:fixed;
+            top:30;
+            right: -440;
+            z-index:0;
+            transition: right 0.7s ease-in-out;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+    .etiqueta:hover{
+        right:0;
+    }
+    .oculto{
+        visibility: hidden;
+        opacity:0.0;
+    }
